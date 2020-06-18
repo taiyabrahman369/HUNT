@@ -1,0 +1,1581 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a,a:focus,a:hover{
+    text-decoration: none;
+}
+html,body{
+    scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.title{
+    text-align: center;
+}
+
+.title h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    color: #353535;
+}
+.title p{
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #353535;
+    line-height: 24px;
+    width: 570px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.clr{
+    clear: both;
+}
+/* ====================================================
+                      navbar-part css start
+=======================================================*/
+nav{
+    background: transparent;
+    border-bottom: 2px solid rgba(254, 198, 0,.2);
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 30px !important;
+}
+nav ul li{
+    margin-left: 30px;
+}
+nav ul li a{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    transition: .4s;
+    position: relative;
+}
+nav ul li a:hover{
+    color: #fec600;
+
+}
+nav ul li a:after{
+    position: absolute;
+    top: 79px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #fec600;
+    content: "";
+    transition: .4s;
+    border-radius: 1px;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.sticky{
+    position: fixed !important;
+    top: 0 !important;
+    width: 100%;
+    background: #222;
+    transition: 1s;
+    height: 80px;
+    border-color: #080808;
+}
+.sticky ul li a:after{
+    position: absolute;
+    top: 58px !important;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #fec600;
+    content: "";
+    transition: .4s;
+    border-radius: 1px;
+}
+.sticky ul li a:hover:after{
+    width: 100%;
+}
+/* ====================================================
+                      navbar-part css end
+=======================================================*/
+
+/* ====================================================
+                      banner-part css start
+=======================================================*/
+#banner-part{
+    position: relative;
+}
+#banner-part .slider .banner{
+    background: url(../images/banner-img.png) no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+#banner-part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    position: absolute;
+    padding-top: 245px;
+    padding-bottom: 100px;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+#banner-part .overlay h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+#banner-part .overlay h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    text-transform: uppercase;
+    color: #fec600;
+}
+#banner-part .overlay p{
+    font-family: 'Open', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    width: 537px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    line-height: 24px;
+}
+#banner-part .overlay a{
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 21px;
+    border: 1px solid #fff;
+     margin-right: 20px;
+    transition: .4s;
+}
+#banner-part .overlay a:hover{
+    color: #222222;
+    background: #fec600;
+    border: 1px solid #fec600;
+}
+.banner-shape{
+    position: relative;
+}
+.banner-shape .shape {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: #fff;
+	transform: skew(-87deg);
+	transform-origin: left bottom;
+}
+#banner-part .prev{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    color: #fff;
+    z-index: 1;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#banner-part .next{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    color: #fff;
+    z-index: 1;
+    font-size: 40px;
+    cursor: pointer;
+}
+/* ====================================================
+                      banner-part css end
+=======================================================*/
+
+/* ====================================================
+                      about-part css start
+=======================================================*/
+#about-part .img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 1px solid #424242;
+    text-align: center;
+    line-height: 344px;
+    margin: 30px 0;
+}
+#about-part .img img{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+}
+#about-part .item{
+    width: 100%;
+    background: #eeeeee;
+    padding-top: 40px;
+    padding-bottom: 45px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 5px;
+    text-align: center;
+    transition: .4s;
+}
+#about-part .item h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #111111;
+    margin-bottom: 30px;
+}
+#about-part .item p{
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    width: 297px;
+    color: #353535;
+}
+
+#about-part #triangle-right {
+    width: 30px;
+    height: 30px;
+    background: #eeeeee;
+    position: absolute;
+    top: 43%;
+    right: 0;
+    transform: rotate(45deg);
+    transition: .4s;
+}
+
+#about-part #triangle-left {
+    width: 30px;
+    height: 30px;
+    background: #eeeeee;
+    position: absolute;
+    top: 43%;
+    left: 0;
+    transform: rotate(45deg);
+    transition: .4s;
+  }
+
+  
+  #about-part #triangle-down {
+	width: 30px;
+	height: 30px;
+	background: #eeeeee;
+	position: absolute;
+	left: 46.3%;
+	bottom: -15px;
+	transform: rotate(45deg);
+	transition: .4s;
+}
+
+#about-part #triangle-up {
+	width: 30px;
+	height: 30px;
+	background: #eeeeee;
+	position: absolute;
+	left: 46.3%;
+	top: -15px;
+	transform: rotate(45deg);
+	transition: .4s;
+}
+
+  #about-part .top{
+      position: absolute;
+      bottom: -23px;
+      left: 50%;
+      transform: translate(-50%,100%);
+      z-index: 1;
+      transition: .4s;
+  }
+
+  #about-part .bottom{
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    z-index: 1;
+    transition: .4s;
+}
+
+#about-part .left{
+    position: absolute;
+    top:50%;
+    right: -24px;
+    transform: translate(-5%,-50%);
+    z-index: 1;
+    transition: .4s;
+}
+
+
+#about-part .right{
+    position: absolute;
+    top:50%;
+    left: -24px;
+    transform: translate(5%,-50%);
+    z-index: 1;
+    transition: .4s;
+}
+
+#about-part .item:hover{
+    -webkit-box-shadow: 0px 1px 5px 2px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 1px 5px 2px rgba(0,0,0,0.36);
+    box-shadow: 0px 1px 5px 2px rgba(0,0,0,0.36);
+    /* filter: drop-shadow(0px -2px 3px #bdb3b3); */
+}
+
+#about-part .item:hover .top{
+    color: #fec600;
+}
+#about-part .item:hover .left{
+    color: #fec600;
+}
+#about-part .item:hover .right{
+    color: #fec600;
+}
+#about-part .item:hover .bottom{
+    color: #fec600;
+}
+
+/* ====================================================
+                      about-part css end
+=======================================================*/
+
+/* ====================================================
+                      portfolio-part css start
+=======================================================*/
+#portfolio-part{
+    background: url(../images/portfolio-img.png) no-repeat center;
+    background-size: cover;
+    margin-top: 5px;
+}
+#portfolio-part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#portfolio-part .overlay .title h1{
+    color: #fff;
+}
+#portfolio-part .overlay .title p{
+    color: #fff;
+}
+#portfolio-part .overlay .img{
+    margin-bottom: 30px;
+    position: relative;
+}
+#portfolio-part .overlay .img img{
+    width: 100%;
+    height: 100%;
+}
+#portfolio-part .overlay .img .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: rgba(0, 0, 0, .6);
+    padding: 0;
+    opacity: 0;
+    transition: .4s;
+}
+#portfolio-part .overlay .img .overlay i{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+}
+
+#portfolio-part .overlay .img:hover .overlay{
+    opacity: 1;
+    height: 100%;
+}
+.vbox-share{
+    display: none;
+}
+.portfolio-shape1{
+    position: relative;
+}
+.portfolio-shape1 .shape {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: #fff;
+	transform: skew(-87deg);
+	transform-origin: left bottom;
+}
+
+.portfolio-shape2{
+    position: relative;
+}
+.portfolio-shape2 .shape {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: #fff;
+	transform: skew(-87deg);
+	transform-origin: right top;
+}
+/* ====================================================
+                      portfolio-part css end
+=======================================================*/
+/* ======================================
+            service css start
+========================================= */
+
+/* #service-part{
+    margin-top: 100px;
+    position: relative;
+}
+
+
+#service-part .line{
+    background: url(../images/line.png) center;
+    background-repeat: repeat-y;
+    height:900px;
+    position: absolute;
+    top:180px;
+    left: 49%;
+    transform: translateX(-50%);
+    width: 2px;
+}
+#service-part .item{
+    width:950px !important;
+    margin: 0 auto;
+    margin-top: 20px;
+    float: right !important;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#service-part .item .left{
+    width:30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#service-part .item .middle{
+    width:10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#service-part .item .middle .img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#service-part .item .right{
+    width:50%;
+}
+
+#service-part .item .right .text{
+    background: #f1f1f1;
+    padding: 50px 30px;
+}
+
+
+
+
+#service-part .item2{
+    width:900px !important;
+    margin-top: 20px;
+    float: left !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+#service-part .item2 .left{
+    width:30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#service-part .item2 .middle{
+    width:10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#service-part .item2 .middle .img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+}
+
+#service-part .item2 .right{
+    width:50%;
+}
+
+#service-part .item2 .right .text{
+    background: #f1f1f1;
+    padding: 50px 30px;
+}
+
+#service-part .slick-center .middle .img{
+    transition: all linear.4s;
+    -webkit-transition: all linear.4s;
+    background: #fec600;
+    transform: scale(1.3);
+}
+
+#service-part .sprev{
+  font-size: 30px;
+  position: absolute;
+  top: -19px;
+  margin-left: 48.5%;
+transform: translateX(-50%);
+color: red;
+}
+
+#testi-part .sprev{
+    font-size: 30px;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: -48px;
+      margin-left: 48.5%;
+      transform: translateX(-50%);
+      transition: .4s;
+  }
+  #service-part .snext{
+    font-size: 30px;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    line-height: 37px;
+    background: transparent;
+    border: 1px solid #000;
+    text-align: center;
+    color: red;
+    position: absolute;
+    top: 561px;
+      margin-left: 48.5%;
+      transform: translateX(-50%);
+      transition: .4s;
+  }
+#service-part .sprev:hover{
+    background: #fec600;
+}
+  #service-part .snext:hover{
+      background: #fec600;
+  } */
+/* ======================================
+            service css end
+========================================= */
+/* ======================================
+            service css start
+========================================= */
+#service-part{
+    position: relative;
+}
+#service-part .line{
+    background: url(../images/srv-line.png)no-repeat center;
+	background-size: cover;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	width: 1px;
+	height: 780px;
+}
+#service-part .service-slider{
+    margin-top: 93px;
+    margin-bottom: 131px;
+}
+#service-part .service-slider .item{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+}
+#service-part .service-slider .item .left{
+    width: 40%;
+    display: flex ;
+    justify-content: flex-end;
+    align-items: center;
+}
+#service-part .service-slider .item .left h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #111111;
+}
+#service-part .service-slider .item .middle{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#service-part .service-slider .item .middle .img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}
+
+#service-part .service-slider .item .right{
+    width: 40%;
+    background: #f1f1f1;
+    position: relative;
+    transition: .4s;
+}
+#service-part .service-slider .item .right .text{
+    padding: 55px 15px;
+}
+#service-part .service-slider .item .right .text p{
+    width: 409px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #353535;
+}
+#service-part .service-slider .item .right .angle-l {
+	width: 37px;
+	height: 37px;
+	background: #f1f1f1;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 43%;
+	left: -16px;
+	border-radius: 7px;
+	z-index: -1;
+}
+#service-part .service-slider .slick-list{
+    height: 670px !important;
+}
+
+
+#service-part .service-slider .item2{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+}
+#service-part .service-slider .item2 .left {
+	width: 40%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#service-part .service-slider .item2 .middle{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#service-part .service-slider .item2 .middle .img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#service-part .service-slider .item2 .right{
+    width: 40%;
+    background: #f1f1f1;
+    position: relative;
+}
+#service-part .service-slider .item2 .right .text{
+    padding: 55px 15px;
+}
+#service-part .service-slider .item2 .right .text p{
+    width: 409px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #353535;
+}
+#service-part .service-slider .item2 .right .angle-r {
+	width: 37px;
+	height: 37px;
+	background: #f1f1f1;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 41%;
+	left: 95%;
+	border-radius: 7px;
+	z-index: -1;
+}
+#service-part .slick-center .middle .img{
+    -webkit-transition: all linear.4s;
+    background: #fec600 !important;
+    transform: scale(1.3);
+}
+#service-part .slick-center .right{
+filter: drop-shadow(-1px -1px 5px rgba(0,0,0, .40));
+}
+#service-part .tprev{
+    font-size: 30px !important;
+    color: #242424 !important;
+    width: 37px ;
+    height: 37px;
+    border: 1px solid #464646;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top: -71px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: .4s;
+}
+#service-part .tnext {
+	font-size: 30px;
+	color: #242424 !important;
+	width: 37px;
+	height: 37px;
+	border: 1px solid #464646;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 37px;
+	position: absolute;
+	bottom: -113px;
+	left: 50%;
+    transform: translateX(-50%);
+    transition: .4s;
+}
+#service-part .tprev:hover{
+    background: #fec600;
+    border: #fec600;
+}
+#service-part .tnext:hover{
+    background: #fec600;
+    border: #fec600;
+}
+
+/* ======================================
+            service css end
+========================================= */
+
+/* ====================================================
+                      testi-part css start
+=======================================================*/
+/* #testi-part{
+    background: url(../images/testibg.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+#testi-part .overlay{
+    width: 100%;
+    padding-top: 110px;
+    padding-bottom: 100px;
+    background: rgba(0, 0, 0, .8);
+}
+#testi-part .overlay .testi-slider{
+    display: flex;
+    justify-content: space-between;
+}
+#testi-part .overlay .testi-slider .left{
+    width: 20%;
+    height: 645px;
+    align-self: center;
+}
+#testi-part .line {
+	background: url(../images/line3.png) center;
+	height: 571px;
+	position: absolute;
+	top: 45%;
+	left: 29%;
+	transform: translate(-50%, -50%);
+	width: 2px;
+}
+#testi-part .overlay .testi-slider .left .item{
+    display: flex;
+    justify-content: center;
+}
+#testi-part .overlay .testi-slider .left .item .img{
+    width: 100px;
+    height: 100px;
+    background: #cccccc;
+    margin-top: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    transition: .4s;
+}
+#testi-part .overlay .testi-slider .left .item .img .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255, .6)
+}
+#testi-part .overlay .testi-slider .left .item .img img{
+    width: 100%;
+    margin-top: 11px;
+}
+#testi-part .slick-center .img{
+    transform: scale(1.3);
+    background: #fec600 !important;
+}
+#testi-part .slick-center .img .overlay{
+    opacity: 0;
+}
+#testi-part .overlay .testi-slider .angle {
+	width: 50px;
+	height: 50px;
+	background: #f1f1f1;
+	position: absolute;
+	top: 42%;
+	left: 38.6%;
+	z-index: 1 !important;
+	transform: rotate(45deg);
+	border-radius: 10px;
+}
+#testi-part .overlay .testi-slider .right{
+    width: 70%;
+    background: url(../images/testibg2.png)no-repeat center;
+    background-size: cover;
+    padding: 60px 35px;
+    align-self: center;
+    margin-bottom: 115px;
+}
+#testi-part .overlay .testi-slider .right .text h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #222222;
+}
+#testi-part .overlay .testi-slider .right .icon i{
+    font-size: 16px;
+    color: #fec600;
+}
+#testi-part .overlay .testi-slider .right .text h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #353535;
+    margin-bottom: 30px;
+}
+#testi-part .overlay .testi-slider .right .text p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #353535;
+    line-height: 24px;
+}
+#testi-part .overlay .testi-slider .right .text .image{
+    display: flex;
+    justify-content: right;
+    margin-top: 55px;
+}
+#testi-part .sprev{
+    font-size: 30px;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: -48px;
+      margin-left: 48.5%;
+      transform: translateX(-50%);
+      transition: .4s;
+  }
+  #testi-part .snext{
+    font-size: 30px;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    line-height: 37px;
+    background: transparent;
+    border: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 561px;
+      margin-left: 48.5%;
+      transform: translateX(-50%);
+      transition: .4s;
+  }
+  #testi-part .sprev:hover{
+    background: #fec600;
+}
+  #testi-part .snext:hover{
+      background: #fec600;
+  } */
+
+/* ====================================================
+                      testi-part css end
+=======================================================*/
+/* ====================================================
+                      testi-part css start
+=======================================================*/
+#testi-part{
+    background: url(../images/testibg.png)no-repeat center;
+    background-size: cover;
+    /* margin-top: 35px; */
+}
+#testi-part .overlay{
+    width: 100%;
+    padding: 100px 0;
+    background: rgba(0, 0, 0, .8);
+}
+#testi-part .overlay .testi-shape{
+    position: relative;
+}
+#testi-part .overlay .testi-shape .shape{
+    position: absolute;
+	top: -100px;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: #fff;
+	transform: skew(-87deg);
+	transform-origin: right top;
+}
+#testi-part .overlay .testi-shape2{
+    position: relative;
+}
+#testi-part .overlay .testi-shape2 .shape{
+    position: absolute;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: #fff;
+	transform: skew(-87deg);
+	transform-origin: left bottom;
+}
+#testi-part .overlay .testi-slider{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+#testi-part .overlay .testi-slider .left{
+    width: 20%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#testi-part .overlay .testi-slider .line {
+	background: url(../images/line3.png)no-repeat center;
+	background-size: cover;
+	position: absolute;
+	top: 6%;
+	left: 10%;
+	width: 2px;
+	height: 570px;
+}
+#testi-part .overlay .testi-slider .left .item{
+    display: flex;
+    justify-content: center;
+}
+#testi-part .overlay .testi-slider .left .slick-list{
+    height: 546px !important;
+}
+#testi-part .overlay .testi-slider .left .item .img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #cccccc;
+    margin-top: 60px;
+    overflow: hidden;
+    position: relative;
+    transition: .4s;
+}
+#testi-part .overlay .testi-slider .left .item .img .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .6);
+    transition: .4s;
+}
+#testi-part .overlay .testi-slider .left .item .img img{
+    width: 100%;
+    margin-top: 11px;
+}
+#testi-part .slick-center .img{
+    background: #fec600 !important;
+    transform: scale(1.2);
+}
+#testi-part .slick-center .img .overlay{
+    opacity: 0;
+}
+#testi-part .overlay .testi-slider .right{
+    width: 76%;
+    padding: 60px 35px;
+    background: url(../images/testibg2.png)no-repeat center;
+    background-size: cover;
+    align-self: center;
+    position: relative;
+}
+#testi-part .overlay .testi-slider .angle {
+	width: 65px;
+	height: 65px;
+	background: #f1f1f1;
+	position: absolute;
+	border-radius: 10px;
+	top: 45%;
+	left: 23%;
+	transform: rotate(45deg);
+}
+#testi-part .overlay .testi-slider .right .item .text h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #222222;
+}
+#testi-part .overlay .testi-slider .right .item .text .icon i{
+    font-size: 16px;
+    color: #fec600;
+}
+#testi-part .overlay .testi-slider .right .item .text h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #353535;
+    margin-top: 5px;
+}
+#testi-part .overlay .testi-slider .right .item .text p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #353535;
+    margin-top: 30px;
+    width: 771px;
+    line-height: 24px;
+}
+#testi-part .overlay .testi-slider .right .item .text .image{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 58px;
+}
+#testi-part .overlay .testi-slider .left .sprev{
+    font-size: 30px;
+    color: #f5f5f5 !important;
+    width: 37px ;
+    height: 37px;
+    border: 1px solid #e3e3e3;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .4s;
+}
+#testi-part .overlay .testi-slider .left .snext{
+    font-size: 30px;
+    color: #f5f5f5 !important;
+    width: 37px ;
+    height: 37px;
+    border: 1px solid #e3e3e3;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 37px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .4s;
+}
+#testi-part .sprev:hover{
+    background: #fec600;
+    border: #fec600;
+}
+#testi-part .snext:hover{
+    background: #fec600;
+    border: #fec600;
+}
+/* ====================================================
+                      testi-part css end
+=======================================================*/
+/* ====================================================
+                      pricing-part css start
+=======================================================*/
+#pricing-part .title{
+    margin-bottom: 63px;
+}
+#pricing-part .item{
+    width: 100%;
+    background: #f1f1f1;
+}
+#pricing-part .item .pricing-head{
+    padding-top: 30px;
+    padding-bottom: 100px;
+    background: #353535;
+    clip-path: polygon(0px 0px, 100% 0, 100% 64%, 0 90%);
+    transition: .4s;
+    position: relative;
+}
+#pricing-part .item .pricing-head h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .4s;
+}
+#pricing-part .item .pricing-details{
+    margin-bottom: 10px;
+    margin-top: 47px;
+}
+#pricing-part .item .pricing-details p{
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #353535;
+    text-align: center;
+    line-height: 30px;
+}
+#pricing-part .item .join{
+    padding-top: 42px;
+    padding-bottom: 26px;
+    background: #353535;
+    clip-path: polygon(0 36%, 100% 0, 100% 100%, 0% 100%);
+    transition: .4s;
+}
+#pricing-part .item .join h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #d8d8d8;
+    text-align: center;
+    transition: .4s;
+    text-transform: uppercase;
+}
+#pricing-part .item .pricing-circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #353535;
+    text-align: center;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    transition: .4s;
+}
+
+#pricing-part .item .pricing-circle .rate{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #353535;
+    margin-top: 4px;
+    margin-left: 4px;
+    transition: .4s;
+}
+#pricing-part .item .pricing-circle .rate p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 29px;
+    color: #fff;
+    padding-top: 10px;
+    transition: .4s;
+}
+#pricing-part .item .pricing-circle .rate .rate-p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: light;
+    font-size: 12px;
+    color: #fff;
+    padding:  0;
+}
+#pricing-part .item:hover{
+-webkit-box-shadow: -1px -1px 5px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px -1px 5px -1px rgba(0,0,0,0.75);
+box-shadow: -1px -1px 5px -1px rgba(0,0,0,0.75);
+}
+#pricing-part .item:hover .pricing-head{
+    background: #fec600;
+    color: #111111;
+}
+#pricing-part .item:hover .pricing-head h1{
+    color: #111111;
+}
+#pricing-part .item:hover .pricing-circle{
+    border: 1px solid #fec600;
+}
+#pricing-part .item:hover .pricing-circle .rate{
+    background: #fec600;
+}
+#pricing-part .item:hover .pricing-circle .rate p{
+    color: #111111 !important;
+}
+#pricing-part .item:hover .join{
+    background: #fec600;
+}
+#pricing-part .item:hover .join h3{
+    color: #111;
+}
+/* ====================================================
+                      pricing-part css end
+=======================================================*/
+/* ======================================
+            counter css start
+========================================= */
+#counter-part{
+    margin-top: 100px;
+    background: url(../images/counterbg.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    transform: skewY(-3.2deg);
+}
+
+#counter-part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .9);
+    padding: 30px 0;
+}
+#counter-part .box{
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#counter-part .box .text{
+    transform: skewY(3deg);
+}
+#counter-part .box .text h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #fff;
+}
+#counter-part .box .text p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+/* ======================================
+            counter css end
+========================================= */
+
+/* ====================================================
+                      team-part css start
+=======================================================*/
+#team-part{
+    margin-top: 75px;
+}
+#team-part .item{
+    width: 100%;
+    border: 1px solid #dddddd;
+}
+#team-part .item .team-img{
+    background: #f1f1f1;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+    position: relative;
+}
+#team-part .item .team-img img{
+    height: 270px;
+}
+
+#team-part .item .team-img .overlay{
+    width: 100%;
+    height: 0%;
+    background: rgba(254, 198, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .4s;
+}
+#team-part .item .team-img .overlay i{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+    opacity: 0;
+}
+#team-part .item .team-details{
+    padding-top: 13px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+#team-part .item .team-details h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #111111;
+    margin-bottom: 10px;
+}
+#team-part .item .team-details p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3b3b3b;
+}
+#team-part .item .team-contact ul{
+    text-align: center;
+    opacity: 0;
+    margin-top: -50px;
+    transition: .4s;
+}
+#team-part .item .team-contact ul li{
+    display: inline-block;
+    margin:0 10px;
+}
+#team-part .item .team-contact ul li a i{
+    color: #111111;
+    font-size: 18px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 1px solid #474747;
+    text-align: center;
+    line-height: 33px;
+    transition: .4s;
+}
+#team-part .item .team-contact ul li a i:hover{
+    background: #fec600;
+    border: 1px solid #fec600;
+}
+#team-part .item:hover .team-contact ul{
+    margin-top: 0;
+    opacity: 1;
+}
+#team-part .item:hover .overlay{
+    height: 100%;
+}
+#team-part .item:hover .overlay i{
+    opacity: 1;
+}
+/* ====================================================
+                      team-part css end
+=======================================================*/
+
+
+/* ====================================================
+                      market-part css start
+=======================================================*/
+#market-part{
+    margin-top: 100px;
+    background: #f1f1f1;
+    padding: 30px 0;
+    transform: skewY(-3.2deg);
+}
+#market-part .box{
+    border: 1px solid #cccccc;
+    text-align: center;
+    padding: 40px 8px;
+    transition: .4s;
+}
+
+#market-part .box img{
+    transform: skewY(3deg);
+}
+#market-part .box:hover{
+    border: 1px solid #fec706;
+}
+
+/* ====================================================
+                      market-part css end
+=======================================================*/
+/* ====================================================
+                      footer-part css start
+=======================================================*/
+
+
+#footer-part .footer-top{
+    background: #222222;
+    text-align: center;
+    padding: 50px 0;
+    transform: skewY(-3.2deg);
+    border-bottom: 3px solid #444444;
+    z-index: 1;
+}
+
+#footer-part .footer-top img{
+    transform: skewY(3deg);
+}
+
+#footer-part .footer {
+	background: #222222;
+	padding-top: 175px;
+	position: relative;
+    margin-top: -90px;
+    z-index: -1;
+}
+
+#footer-part .footer .text{
+    text-align: center;
+    border-right: 1px solid #555555;
+}
+#footer-part .footer .text i{
+font-size: 20px;
+color: #353535;
+width: 35px;
+height: 35px;
+border-radius: 50%;
+border: 1px solid #fec600;
+background: #fec600;
+text-align: center;
+line-height: 35px;
+margin-bottom: 20px;
+}
+
+#footer-part .footer .text p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    width: 242px;
+    margin: 0 auto;
+
+    transition: .4s;
+}
+#footer-part .footer .text .admin{
+    width: 250px;
+}
+#footer-part .footer .text p:hover{
+    color: #fec600;
+}
+
+#footer-part .footer .follow{
+    width: 100%;
+}
+#footer-part .footer .follow h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#footer-part .footer .follow ul{
+    margin-bottom: 30px;
+}
+#footer-part .footer .follow ul li{
+    display: inline-block;
+    margin-left: 30px;
+}
+#footer-part .footer .follow ul li a i{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #353535;
+    text-align: center;
+    line-height: 40px;
+    transition: .4s;
+}
+
+#footer-part .footer .follow ul li:hover a i{
+background: #fec600;
+}
+#footer-part .footer-bottom{
+    padding: 20px 0;
+    background: #353535;
+    text-align: center;
+}
+#footer-part .footer-bottom p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #e8e8e8;
+}
+#footer-part .footer-bottom p span{
+    color: #d8a90f;
+}
+.btop{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 16px;
+	text-transform: capitalize;
+	z-index: 9999;
+	display: none;
+	background: #fec600;
+	color: #fff;
+	transition: .5s;
+}
+.btop:hover{
+    background: #353535;
+    color: #fff;
+}
+/* ====================================================
+                      footer-part css end
+=======================================================*/
+
